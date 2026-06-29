@@ -20,28 +20,43 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button onclick="toggleTheme()">Dark/Light Mode</button>
     </header>
 
     <!-- Main Content -->
     <main>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+         <section id="about">
+                 <h2>About Me</h2>
 
-            <img src="ASHVANI PIC.jpg" alt="Profile picture of Ashvani Yadav">
+                 <button onclick="toggleAbout()">Show/Hide About</button>
 
-            <p>
-                Hello! My name is Ashvani Yadav. I am passionate about web
-                development and creating user-friendly websites.
-            </p>
+             <div id="aboutContent">
+                <img src="ASHVANI PIC.jpg" alt="Profile picture of Ashvani Yadav">
 
-            <p>
-                I enjoy learning new technologies and building projects
-                that solve real-world problems.
-            </p>
-        </section>
+               <p>
+                  Hello! My name is Ashvani Yadav. I am passionate about web
+                  development and creating user-friendly websites.
+               </p>
 
+               <p>
+                    I enjoy learning new technologies and building projects
+                    that solve real-world problems.
+               </p>
+            </div>
+         </section>
+
+         <section id="gallery">
+           <h2>Image Slider</h2>
+
+             <img id="slider" src="image1.jpg" width="300">
+
+              <br><br>
+
+             <button onclick="previousImage()">Previous</button>
+             <button onclick="nextImage()">Next</button>
+         </section>
         <!-- Skills Section -->
         <section id="skills">
             <h2>My Skills</h2>
@@ -54,12 +69,21 @@
                 <li>Git & GitHub</li>
             </ul>
         </section>
+        <section id="todo">
+              <h2>My To-Do List</h2>
+
+             <input type="text" id="taskInput" placeholder="Enter a task">
+
+             <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post">
+            <form id="contactForm">
 
                 <label for="name">Name:</label>
                 <input
@@ -113,6 +137,9 @@
     <footer>
         <p>&copy; 2026 Ashvani Yadav. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
+
 
 </body>
 </html>

@@ -83,3 +83,39 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1e1e1e;
+}
+
+.dark-mode header,
+.dark-mode footer{
+    background:black;
+}
+
+#taskList li{
+    margin:10px 0;
+}
+
+#taskList button{
+    margin-left:15px;
+    padding:4px 8px;
+}
+
+#gallery{
+    text-align:center;
+}
+
+#slider{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
